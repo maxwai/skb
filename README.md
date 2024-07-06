@@ -3,10 +3,12 @@
 
 > Wir hüten Ihre Daten - als wären es unsere eigenen.
 
-![GitHub License](https://img.shields.io/github/license/maxwai/skb)
+
+[![GitHub license](https://badgen.net/github/license/maxwai/skb)](LICENSE)
 ![Static Badge](https://img.shields.io/badge/CLI-rust-orange)
 ![Static Badge](https://img.shields.io/badge/Server-Java-blue)
 ![Static Badge](https://img.shields.io/badge/Java-17-green)
+![Rust: 1.71.1+](https://img.shields.io/badge/rust-1.71.1+-93450a)
 ![Static Badge](https://img.shields.io/badge/Version-1.0.0-red)
 
 Föderiertes Backup System
