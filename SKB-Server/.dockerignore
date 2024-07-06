@@ -1,0 +1,36 @@
+.dockerignore
+.env-example
+.gitignore
+Dockerfile
+mvnw.cmd
+README.md
+
+# Maven
+target/
+!target/quarkus-app
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+.flattened-pom.xml
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# patch
+*.orig
+*.rej
+
+# Local environment
+.env
+
+# Plugin directory
+/.quarkus/cli/plugins/

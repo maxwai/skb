@@ -1,0 +1,23 @@
+version: '3.2'
+
+services:
+  skb-server:
+    container_name: SKB-Server
+    build: .
+    restart: "unless-stopped"
+    volumes:
+      - ./appdata:/app/appdata
+      - ./data:/app/appdata/data
+    ports:
+      - "8443:8443"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - CLIENT_PUBLIC_KEY="/app/appdata/cert/public.pem"
+      - HOSTNAME="skb.example.com"
+      - OWNER="Max Mustermann"
+      - BLOCK_SIZE=4096
+      - HEALTH_CHECK_PERCENT="10"
+      - HEALTH_CHECK_INTERVAL="1d"
+      - MOUNT_PATH="/app/appdata/data"
+      - QUARKUS_LOG_LEVEL="INFO"
